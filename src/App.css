@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #262626;
   padding: 18px 30px;
   color: #fff;
 }
@@ -23,7 +23,142 @@
   text-decoration: none;
   color: #fff;
 }
+.three{
+  display: none;
+}
 .Home-Top{
-  padding: 20px 40px 0px;
+  padding: 80px 50px;
   display: flex;
+  justify-content: space-between;
+}
+.Home-Top div{
+  padding: 0px 20px;
+}
+.Home-Top img{
+  outline: 1px solid grey;
+  outline-offset: -10px;
+}
+.Home-Top h1{
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.Home-Top p{
+  color: #777;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.contact-h1{
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  margin: 40px 0px 60px;
+}
+.project-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+.project-h1{
+  font-size: 40px;
+  margin-top: 40px;
+  text-align: center;
+  color: #333;
+}
+.project-box{
+  width: 30%;
+  padding: 15px;
+  box-shadow: 0px 0px 6px -2px #333;
+  transition: all 0.5s;
+}
+.project-box:hover{
+  transform: scale(1.05);
+}
+.project-box a{
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  position: relative;
+}
+.project-box a::after{
+  content: url("images/download.svg");
+  position: absolute;
+  top: 2px;
+}
+.project-box h2{
+  margin: 20px 0px 0px;
+}
+.p-img{
+  height: 200px;
+  width: 100%;
+}
+.p-img img{
+  width: 100%;
+  height: 100%;
+}
+.form-div{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.form-div div{
+  width: 400px;
+  height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-div input{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0px 0px 7px 0px #dbd6db;
+}
+.form-div input[type=submit]{
+  width: 40%;
+  font-size: 24px;
+}
+@media only screen and (max-width:1083px) {
+  .Home-Top{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .Home-Top h1{
+    margin-top: 20px;
+  }
+  .Home-Top p{
+    margin-top: 20px;
+  }
+  .Home-Top img{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:992px) {
+  .project-section{
+    flex-wrap: wrap;
+  }
+  .project-box{
+    width: 48%;
+    margin-bottom: 35px;
+  }
+
+}
+@media only screen and (max-width:700px) {
+  .project-section{
+    justify-content: center;
+  }
+  .project-box{
+    width: 95%;
+  }
+
+}
+@media only screen and (max-width:550px) {
+  .Nav-bar ul{
+    display: none;
+  }
+  .three{
+    display: block;
+  }
 }
